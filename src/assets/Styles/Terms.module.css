@@ -1,0 +1,40 @@
+.termsStyle {
+    padding: 1rem 20rem;
+    font-size: large;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.submitButton {
+    background-color: #54a0ff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 13rem;
+    margin-left: 15rem;
+    font-size: larger;
+}
+
+.backButton {
+    border: none;
+    background-color: #54a0ff;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 40px;
+    width: 13rem;
+    font-size: larger;
+}
+
+:hover.backButton {
+    background-color: #1e90ff;
+    color: black;
+}
+
+:hover.submitButton {
+    background-color: #1e90ff;
+    color: black;
+}

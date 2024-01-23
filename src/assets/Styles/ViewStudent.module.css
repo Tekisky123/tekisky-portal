@@ -1,0 +1,47 @@
+/* .cart {
+    
+} */
+
+.cartDiv {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 10rem;
+}
+
+.tableData {
+    text-align: center;
+    height: 50px;   
+    width: 15rem;
+}
+
+/* .tableButton {
+    border: none;
+    background-color: #54a0ff;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 13rem;
+    font-size: larger;
+} */
+
+:hover.tableButton {
+    background-color: #1e90ff;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.popButton{
+    display: flex;
+}
+
+.popButton{
+    display: flex;
+    margin-left: 50px;
+}
+
+table{
+    margin-left: 0;
+}

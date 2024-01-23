@@ -1,0 +1,28 @@
+.NavDiv{
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    height: 7rem;
+}
+
+.imgNav{
+    margin-left: 10rem;
+    height: 5rem;  
+    margin-top: 10px; 
+    cursor: pointer;
+}
+
+.NavList{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 12rem;
+    margin-top: 25px;
+}
+
+.NavListDetails{
+    font-size: large;
+    margin-left: 40px;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}

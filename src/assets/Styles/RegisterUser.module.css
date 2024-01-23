@@ -1,0 +1,56 @@
+.mainDiv {
+    height: 55rem;
+    background: linear-gradient(to right,
+            #60a3bc,
+            #dff9fb);
+}
+
+.regLabel {
+    font-size: large;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.regInput {
+    background-color: #dff9fb;
+    height: 35px;
+    width: 40rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.formDiv {
+    padding-top: 5rem;
+    height: 40rem;
+    width: 60rem;
+    margin-left: 14rem;
+    border-radius: 10px;
+    background: linear-gradient(to right,
+            #d1d8e0,
+            #82ccdd);
+}
+
+.regButton {
+    border: none;
+    background-color: #54a0ff;
+    color: white;
+    margin-top: 2rem;
+    margin-left: 24rem;
+    border-radius: 5px;
+    height: 40px;
+    width: 13rem;
+    font-size: larger;
+}
+
+:hover.regButton {
+    background-color: #1e90ff;
+    color: black;
+}
+
+.errorPara {
+    color: red;
+}

@@ -1,0 +1,65 @@
+.compDiv {
+    background: linear-gradient(to right,
+            #d1d8e0,
+            #82ccdd);
+    display: flex;
+    width: 80%;
+    height: 60%;
+    margin-left: 10rem;
+    /* margin-top: 10rem; */
+}
+
+.imgLog {
+    height: 60px;
+    width: 60px;
+    margin-left: 12rem;
+}
+
+.mainDiv {
+    height: 55rem;
+    padding-top: 8rem;
+    background: linear-gradient(to right,
+            #60a3bc,
+            #dff9fb);
+}
+
+.logDiv {
+    width: 50%;
+    background-color: white;
+    padding-top: 3rem;
+}
+
+.loginLable {
+    font-size: large;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}   
+
+.loginInput {
+    background-color: #dff9fb;
+    height: 40px;
+    width: 16rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.loginButton {
+    border: none;
+    background-color: #54a0ff;
+    color: white;
+    margin-top: 3rem;
+    margin-left: 8rem;
+    border-radius: 5px;
+    height: 40px;
+    width: 13rem;
+    font-size: larger;
+}
+
+:hover.loginButton {
+    background-color: #1e90ff;
+    color: black;
+}

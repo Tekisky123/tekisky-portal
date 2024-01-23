@@ -1,0 +1,180 @@
+/* courceDetais style */
+
+.apph2 {
+    margin-left: 9rem;
+}
+
+.courceDetais {
+    margin-left: 9rem;
+    width: 80%;
+}
+
+.courceDetaisInputs {
+    height: 30px;
+    width: 60%;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.courceDetaisLabels {
+    font-size: larger;
+}
+
+.validParaCource {
+    color: red;
+    margin-top: -7px;
+}
+
+
+
+/* Personal Detais style  */
+
+.personalDetais {
+    margin-left: 20px;
+}
+
+.personalDetaisLabels {
+    font-size: larger;
+    margin-left: 8rem;
+}
+
+.personalDetaisInputs {
+    height: 30px;
+    width: 50%;
+    margin-left: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.DOBInputs {
+    height: 30px;
+    width: 41.6%;
+    margin-left: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: larger
+}
+
+.nationalityInputs {
+    height: 30px;
+    width: 27.5%;
+    margin-left: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.genderLabels {
+    font-size: large;
+    margin-left: 20px;
+}
+
+.validParaPersonal{
+    color: red;
+    margin-left: 8rem;
+}
+
+
+/* contactDetaisLabels  style*/
+
+.contactDetais {
+    margin-left: 9rem;
+}
+
+.contactDetaisLabels {
+    font-size: larger;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.contactDetaisInputs {
+    height: 30px;
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.mobAndEmailInputs {
+    height: 30px;
+    width: 26.3rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.fatherInputs {
+    height: 30px;
+    width: 49.2rem;
+    margin-left: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.validParaContact{
+    color: red;
+}
+
+
+
+/* Educational Details  */
+
+.tableInputs {
+    text-align: center;
+    height: 30px;
+    width: 13rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+table {
+    border: 2px solid black;
+    margin-left: 9rem;
+}
+
+table tr td,
+th {
+    border: 1px solid black;
+}
+
+option {
+    height: 20px;
+}
+
+.nextButton{
+    border: none;
+    background-color: #54a0ff;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 13rem;
+    margin-left: 38rem;
+    font-size: larger;
+}
+
+:hover.nextButton {
+    background-color: #1e90ff;
+    color: black;
+}
+
+hr {
+    width: 80%;
+}
+
+.courceDetaish2 {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 9rem
+}
+
+.stdTable{
+    margin-left: 9rem;
+}

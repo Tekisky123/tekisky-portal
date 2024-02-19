@@ -1,0 +1,151 @@
+.cart {
+    width: 25rem;
+    /* margin: 2rem 35rem; */
+}
+
+.tableData {
+    height: 3rem;
+    padding-left: 10rem;
+    /* text-align: center; */
+}
+
+.tableMainDiv {
+    padding-top: 5rem;
+    height: 130rem;
+    background: linear-gradient(to right,
+            #60a3bc,
+            #dff9fb)
+}
+
+.tableDiv {
+    padding: 2rem;
+    height: 117rem;
+    width: 50rem;
+    background-color: #ecf0f1;
+    position: relative;
+    left: 20rem;
+    border-radius: 10px;
+}
+
+.tableheading {
+    padding: 1rem 5rem 1rem 5rem;
+}
+
+.infoButton {
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    margin-top: 20px;
+    margin-left: 6rem;
+    border-radius: 5px;
+    height: 40px;
+    width: 13rem;
+    font-size: larger;
+}
+
+:hover.infoButton {
+    background-color: #1e90ff;
+    color: black;
+}
+
+
+/* for Tablet screen */
+/* @media only screen and (min-width: 600px) {
+    .tableDiv {
+        font-size: 20px;
+        width: 43rem;
+        position: relative;
+        left: 1.5rem !important;
+    }
+
+    .tableData {
+        height: 3rem;
+        padding-left: 7rem;
+    }
+} */
+
+@media only screen and (min-width: 480px) and (max-width: 830px) {
+    .tableDiv {
+        font-size: 20px;
+        width: 45rem;
+        position: relative;
+        left: 1.5rem !important;
+    }
+
+    .tableData {
+        height: 3rem;
+        padding-left: 7rem;
+    }
+}
+
+
+/* for mobile screen */
+@media only screen and (max-width: 480px) {
+    .tableDiv {
+        font-size: 15px !important;
+        height: auto;
+        font-size: 20px;
+        width: 20rem;
+        position: relative;
+        left: 1.3rem;
+    }
+
+    .tableData {
+        height: 3rem;
+        padding-left: 1rem;
+    }
+
+    .tableheading {
+        padding: 0rem;
+    }
+
+    .infoButton {
+        font-size: 5px;
+        margin-top: 20px;
+        margin-left: 2px;
+        border-radius: 5px;
+        height: 40px;
+        width: 8rem;
+        font-size: larger;
+    }
+
+    .tableMainDiv {
+        padding-top: 5rem;
+        height: 120rem;
+    }
+}
+
+/* @media only screen and (max-width: 600px) {
+    .tableDiv {
+        font-size: 15px !important;
+        height: auto;
+        font-size: 20px;
+        width: 20rem;
+        position: relative;
+        left: 1.5rem;
+    }
+
+    .tableData {
+        height: 3rem;
+        padding-left: 1rem;
+    }
+
+    .tableheading {
+        padding: 0rem;
+    }
+
+    .infoButton {
+        font-size: 5px;
+        margin-top: 20px;
+        margin-left: 2px;
+        border-radius: 5px;
+        height: 40px;
+        width: 8rem;
+        font-size: larger;
+    }
+
+    .tableMainDiv {
+        padding-top: 5rem;
+        height: 120rem;
+    }
+} */

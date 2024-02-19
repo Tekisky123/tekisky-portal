@@ -1,47 +1,191 @@
-/* .cart {
-    
-} */
+.mainDivStd {
+    background: linear-gradient(to right,
+            #60a3bc,
+            #dff9fb);
+}
 
-.cartDiv {
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-left: 10rem;
+.cart {
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    height: 20rem;
+    width: 25rem;
+    margin: 2rem 2.5rem;
 }
 
 .tableData {
-    text-align: center;
-    height: 50px;   
-    width: 15rem;
+    padding: 12px 15px;
 }
 
-/* .tableButton {
+.cartDivTable {
+    border-radius: 5rem;
+}
+
+.cartDiv {
+    display: inline-block;
+}
+
+
+.tableButton {
     border: none;
-    background-color: #54a0ff;
+    background-color: #1e90ff;
     color: white;
     border-radius: 5px;
     height: 40px;
-    width: 13rem;
+    width: 10rem;
     font-size: larger;
-} */
+    margin-left: 10px;
+}
+
+p {
+    margin-left: 2%;
+    font-size: 20px;
+}
 
 :hover.tableButton {
     background-color: #1e90ff;
     color: black;
 }
 
-table {
-    border-collapse: collapse;
+.searchImg {
+    border-radius: 10px 0 0px 10px;
+    background-color: white;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-top: -5px;
 }
 
-.popButton{
-    display: flex;
+.searchInput {
+    border-radius: 0 10px 10px 0;
+    border: none;
+    height: 3rem;
+    width: 25rem;
+    margin-top: 10px;
 }
 
-.popButton{
-    display: flex;
-    margin-left: 50px;
+.searchDiv {
+    background: linear-gradient(to right,
+            #dff9fb,
+            #60a3bc);
+    height: 4.5rem;
+    width: 32rem;
+    background-color: wheat;
+    border-radius: 5px;
 }
 
-table{
-    margin-left: 0;
+.searchMainDiv {
+    padding-top: 2rem;
+    padding-left: 29rem;
 }
+
+@media only screen and (max-width: 320px) {
+    .cart {
+        height: 20rem;
+        width: 18rem !important;
+        margin: 0px 1.2rem !important;
+    }
+
+    .searchImg {
+        height: 3rem;
+        margin-left: 2rem;
+        margin-top: -5px;
+    }
+
+    .searchInput {
+        border: none;
+        height: 3rem;
+        width: 12rem !important;
+        margin-top: 10px;
+    }
+
+    .searchMainDiv {
+        padding-top: 2rem;
+        padding-left: 0.7rem;
+    }
+
+    .tableButton {
+        width: 7rem !important;
+        margin-left: 1px;
+    }
+
+    .searchDiv {
+        height: 4.5rem;
+        width: 18rem !important;
+        background-color: wheat;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 320px) and (max-width: 480px) {
+    .cart {
+        height: 20rem;
+        width: 20rem;
+        margin: 0px 1.2rem !important;
+    }
+
+    .searchImg {
+        height: 3rem;
+        margin-left: 2rem;
+        margin-top: -5px;
+    }
+
+    .searchInput {
+        border: none;
+        height: 3rem;
+        width: 15rem;
+        margin-top: 10px;
+    }
+
+    .searchMainDiv {
+        padding-top: 2rem;
+        padding-left: 0.7rem;
+    }
+
+    .tableButton {
+        width: 8rem;
+        margin-left: 1px;
+    }
+
+    .searchDiv {
+        height: 4.5rem;
+        width: 21rem;
+        background-color: wheat;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 830px) {
+
+    .cart {
+        height: 20rem;
+        width: 35rem;
+        margin: 2rem 6.5rem;
+        font-size: 1.2rem;
+    }
+
+    .searchImg {
+        height: 3rem;
+        margin-left: 2rem;
+        margin-top: -2px;
+    }
+
+    .searchInput {
+        border: none;
+        height: 3rem;
+        width: 25rem;
+        margin-top: 10px;
+    }
+
+    .searchMainDiv {
+        width: auto;
+        padding-top: 2rem;
+        padding-left: 9rem;
+    }
+
+    .tableButton {
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (min-width: 831px) and (max-width: 1024px) {}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}

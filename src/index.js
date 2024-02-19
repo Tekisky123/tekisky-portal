@@ -15,3 +15,14 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+// import express from 'express'
+// import cors from 'cors'
+// const app = express();
+// app.use(
+//     cors({
+//         origin: "http://localhost:5174/viewStudent",
+//         methods: ["GET", "POST", "PUT", "DELETE"]
+//     })
+// )

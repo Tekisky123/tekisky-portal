@@ -1,28 +1,305 @@
-.NavDiv{
+/* Navbar.module.css */
+
+.NavDiv {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: black;
     height: 7rem;
+    padding: 0 1rem;
+    align-items: center;
 }
 
-.imgNav{
-    margin-left: 10rem;
-    height: 5rem;  
-    margin-top: 10px; 
+.imgNav {
     cursor: pointer;
 }
 
-.NavList{
+.NavList {
+    list-style: none;
     display: flex;
-    justify-content: flex-start;
-    margin-left: 12rem;
-    margin-top: 25px;
+    margin-right: 15rem;
+    padding: 0;
+    align-items: center;
 }
 
-.NavListDetails{
+.NavList li {
     font-size: large;
-    margin-left: 40px;
-    list-style: none;
+    margin-left: 50px;
     color: white;
     cursor: pointer;
+}
+
+.NavListToggle {
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 320px) {
+    .NavDiv {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        /* width: auto; */
+    }
+
+    .imgNav {
+        margin-bottom: 10px;
+        margin-top: 0px;
+        margin-left: -15px;
+    }
+
+    .NavList {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        background-color: black;
+        top: 5.1rem;
+        left: 0;
+    }
+
+    .NavList.active {
+        display: flex;
+        margin-top: 1.8%;
+        height: 45%;
+    }
+
+    .NavList li {
+        margin: 10px 0;
+        height: 10%;
+        font-size: 17px;
+    }
+
+    .NavListToggle {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        left: 17rem !important;
+        top: 1.5rem;
+    }
+
+    .NavListToggle .toggleIcon {
+        width: 26px;
+        background-color: #1bc26c;
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 5px;
+    }
+
+    .toggleIcon {
+        font-weight: 650;
+        border: none;
+        color: black;
+        text-align: center;
+        padding: 5px;
+        transform: rotate(90deg);
+
+    }
+}
+
+/* Styles for smaller screens mobile */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .NavDiv {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: auto;
+    }
+
+    .imgNav {
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
+    .NavList {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        background-color: black;
+        top: 5.1rem;
+        left: 0;
+    }
+
+    .NavList.active {
+        display: flex;
+        margin-top: 1.8%;
+        height: 45%;
+    }
+
+    .NavList li {
+        margin: 10px 0;
+        height: 10%;
+        font-size: 17px;
+    }
+
+    .NavListToggle {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        left: 20rem;
+        top: 1.5rem;
+    }
+
+    .NavListToggle .toggleIcon {
+        width: 26px;
+        background-color: #1bc26c;
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 5px;
+    }
+
+    .toggleIcon {
+        font-weight: 650;
+        border: none;
+        color: black;
+        text-align: center;
+        padding: 5px;
+        transform: rotate(90deg);
+
+    }
+}
+
+/* Responsive styles for tablet */
+@media only screen and (min-width: 481px) and (max-width: 830px) {
+    .NavDiv {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        /* width: 52rem; */
+    }
+
+    .imgNav {
+        /* margin-bottom: 10px; */
+        margin-top: 0px;
+    }
+
+    .NavList {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        background-color: black;
+        top: 7rem;
+        left: 0;
+    }
+
+    .NavList.active {
+        display: flex;
+        margin-top: -2rem;
+        height: 45%;
+    }
+
+    .NavList li {
+        margin: 10px 0;
+        height: 10%;
+        font-size: 17px;
+    }
+
+    .NavListToggle {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        right: 1rem;
+        top: 20px;
+    }
+
+    .NavListToggle .toggleIcon {
+        width: 26px;
+        background-color: #1bc26c;
+        /* margin: 5px 0; */
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 5px;
+    }
+
+    .toggleIcon {
+        font-weight: 650;
+        border: none;
+        color: black;
+        text-align: center;
+        padding: 5px;
+        transform: rotate(90deg);
+
+    }
+}
+
+@media only screen and (min-width: 831px) and (max-width: 1024px) {
+    .NavDiv {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: 52.2rem;
+    }
+
+    .imgNav {
+        /* margin-bottom: 10px; */
+        margin-top: 0px;
+    }
+
+    .NavList {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 61.1rem;
+        position: absolute;
+        background-color: black;
+        top: 6.9rem;
+        left: 0;
+    }
+
+    .NavList.active {
+        display: flex;
+        margin-top: -2rem;
+        height: 45%;
+    }
+
+    .NavList li {
+        margin: 10px 0;
+        height: 10%;
+        font-size: 17px;
+    }
+
+    .NavListToggle {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        right: 3rem;
+        top: 20px;
+    }
+
+    .NavListToggle .toggleIcon {
+        width: 26px;
+        background-color: #1bc26c;
+        /* margin: 5px 0; */
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 5px;
+    }
+
+    .toggleIcon {
+        font-weight: 650;
+        border: none;
+        color: black;
+        text-align: center;
+        padding: 5px;
+        transform: rotate(90deg);
+
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .NavDiv {
+        display: flex;
+        height: auto;
+        width: 69rem;
+    }
 }

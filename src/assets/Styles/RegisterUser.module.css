@@ -1,3 +1,10 @@
+.ringLoader {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 15rem;
+}
+
 .mainDiv {
     height: 55rem;
     background: linear-gradient(to right,
@@ -8,30 +15,36 @@
 .regLabel {
     font-size: large;
     margin-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 .regInput {
     background-color: #dff9fb;
     height: 35px;
     width: 40rem;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    margin-left: 20px;
+    border: none;
+    margin-left: 40px;
     border-radius: 5px;
 }
 
 .formDiv {
     padding-top: 5rem;
-    height: 40rem;
+    /* height: 45rem; */
     width: 60rem;
-    margin-left: 14rem;
+    margin-left: 16rem;
     border-radius: 10px;
     background: linear-gradient(to right,
             #d1d8e0,
             #82ccdd);
+}
+
+.seletInput {
+    background-color: #dff9fb;
+    height: 35px;
+    width: 20rem;
+    margin-left: 2.5rem;
+    border: none;
+    border-radius: 5px;
 }
 
 .regButton {
@@ -43,6 +56,7 @@
     border-radius: 5px;
     height: 40px;
     width: 13rem;
+    margin-bottom: 20px;
     font-size: larger;
 }
 
@@ -53,4 +67,83 @@
 
 .errorPara {
     color: red;
+    font-size: small;
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+}
+
+#tableRegister {
+    border: none !important;
+    outline: none;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 830px) {
+    .formDiv {
+        padding-top: 3rem;
+        width: 40rem;
+        margin-left: 4.5rem;
+    }
+
+    .regInput {
+        width: 20rem;
+        border: none;
+        margin-left: 40px;
+    }
+
+    .regButton {
+        margin-top: 2rem;
+        margin-left: 13rem;
+        height: 40px;
+        width: 13rem;
+        margin-bottom: 20px;
+        font-size: larger;
+    }
+
+    .mainDiv {
+        height: 69.5rem;
+    }
+}
+
+/* for mobile screen */
+@media only screen and (max-width: 480px) {
+    .formDiv {
+        padding-top: 3rem;
+        width: 20rem;
+        margin-left: 2.2rem;
+    }
+
+    .mainDiv {
+        height: 40rem;
+    }
+
+    .regLabel {
+        font-size: large;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .regInput {
+        width: 10rem;
+        border: none;
+        margin-left: -20px;
+    }
+
+    .seletInput {
+        height: 35px;
+        width: 10rem;
+        margin-left: -1.3rem;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .regButton {
+        margin-top: 2rem;
+        margin-left: 3.5rem;
+        height: 40px;
+        width: 13rem;
+        margin-bottom: 20px;
+        font-size: larger;
+    }
+
 }

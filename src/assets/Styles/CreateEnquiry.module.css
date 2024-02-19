@@ -1,0 +1,118 @@
+.mainDivEnq {
+    height: 45rem;
+    background: linear-gradient(to right,
+            #60a3bc,
+            #dff9fb);
+    padding-top: 3rem;
+}
+
+.formDiv {
+    width: 50rem;
+    background: linear-gradient(to right,
+            #d1d8e0,
+            #82ccdd);
+    position: relative;
+    left: 20rem;
+    padding-top: 2rem;
+    border-radius: 10px;
+}
+
+.tableData {
+    padding-left: 5rem;
+    padding-top: 10px;
+}
+
+.enqLabels {
+    font-size: large;
+}
+
+.enqInputs {
+    padding-left: 10px;
+    height: 2rem;
+    width: 25rem;
+    background-color: #dff9fb;
+    border: none;
+    border-radius: 3px;
+}
+
+.enqPara {
+    font-size: 15px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.submitButton {
+    border: none;
+    background-color: #54a0ff;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 13rem;
+    margin-left: 18rem;
+    font-size: larger;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+:hover.submitButton {
+    background-color: #1e90ff;
+    color: black;
+}
+
+@media only screen and (max-width: 320) {
+    .mainDivEnq {
+        height: 45rem;
+        background: linear-gradient(to right,
+                #60a3bc,
+                #dff9fb);
+        padding-top: 3rem;
+    }
+
+    .formDiv {
+        width: 50rem;
+        background: linear-gradient(to right,
+                #d1d8e0,
+                #82ccdd);
+        position: relative;
+        left: 2rem !important;
+        padding-top: 2rem;
+        border-radius: 10px;
+    }
+
+    .tableData {
+        padding-left: 5rem;
+        padding-top: 10px;
+    }
+
+    .enqLabels {
+        font-size: large;
+    }
+
+    .enqInputs {
+        padding-left: 10px;
+        height: 2rem;
+        width: 5rem;
+        background-color: #dff9fb;
+        border: none;
+        border-radius: 3px;
+    }
+
+    .enqPara {
+        font-size: 15px;
+        color: red;
+        margin-bottom: 10px;
+    }
+
+    .submitButton {
+        border: none;
+        background-color: #54a0ff;
+        color: white;
+        border-radius: 5px;
+        height: 40px;
+        width: 13rem;
+        margin-left: 18rem;
+        font-size: larger;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+}

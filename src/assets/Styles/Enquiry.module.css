@@ -1,0 +1,39 @@
+.createButton {
+    border: none;
+    background-color: #54a0ff;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 10rem;
+    font-size: larger;
+    margin-left: 80%;
+    margin-top: 2rem;
+}
+.deleteButton {
+    border: none;
+    background-color: #54a0ff;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 10rem;
+    font-size: larger;
+    margin-left: 1px;
+}
+
+:hover.createButton {
+    background-color: #1e90ff;
+    color: black;
+}
+:hover.deleteButton {
+    background-color: #1e90ff;
+    color: black;
+}
+
+.enqMainDiv{
+    padding: 2rem 12%;
+}
+
+.enqTable{
+    width: 60rem;
+    text-align: center;
+}

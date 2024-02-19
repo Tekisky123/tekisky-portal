@@ -1,0 +1,105 @@
+.maincontainer {
+    height: 45rem;
+    width: 100%;
+    background: linear-gradient(to right,
+            #60a3bc,
+            #dff9fb);
+}
+
+.divTable{
+    width: 30rem;
+    height: 12rem;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+}
+
+.mainDiv {
+    display: inline-block;
+    margin: 10px;
+
+
+}
+
+.tableData {
+    width: 15rem;
+    height: 3rem;
+    padding: 10px;
+}
+
+.infoDiv {
+    margin-left: 20px;
+}
+
+.RegButton {
+    border: none;
+    background-color: #54a0ff;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 13rem;
+    font-size: larger;
+    margin-left: 10px;
+}
+
+:hover.RegButton {
+    background-color: #1e90ff;
+    color: black;
+}
+
+table {
+    border: none !important;
+    /* border-radius: 2rem; */
+}
+
+@media only screen and (min-width: 480px) and (max-width: 830px) {
+    .tableData {
+        width: 22rem;
+        height: 4rem;
+        font-size: large;
+    }
+
+    .infoDiv {
+        /* margin-left: 20px; */
+    }
+
+    .mainDiv {
+        margin-top: 50px;
+        margin-left: -25px;
+    }
+
+    .RegButton {
+        height: 50px;
+        width: 19rem;
+        font-size: larger;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .tableData {
+        width: 2rem;
+        height: 4rem;
+        font-size: large;
+    }
+
+    .infoDiv {
+        /* margin-left: 20px; */
+    }
+
+    .mainDiv {
+        margin-top: 50px;
+        margin-left: -70px;
+    }
+
+    .RegButton {
+        height: 50px;
+        width: 10rem;
+        font-size: larger;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

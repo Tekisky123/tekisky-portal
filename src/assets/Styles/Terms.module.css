@@ -3,9 +3,9 @@
     font-size: large;
 }
 
-li {
+/* li {
     margin-top: 10px;
-}
+} */
 
 .submitButton {
     background-color: #54a0ff;
@@ -37,4 +37,72 @@ li {
 :hover.submitButton {
     background-color: #1e90ff;
     color: black;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 830px) {
+    body {
+        font-size: 10px;
+    }
+
+    .termsStyle h1,
+    .termsStyle h4,
+    .termsStyle h3,
+    .termsStyle li {
+        /* font-size: 12px; */
+    }
+
+    .termsStyle {
+        background-color: #fff;
+        text-align: justify;
+    }
+
+    .termsStyle ol li {
+        /* box-sizing: border-box;
+        text-align: justify;
+        display: flex;
+        flex-direction: column; */
+        font-size: large;
+        width: 100vw;
+    }
+
+    .submitButton,
+    .backButton {
+        /* font-size: 12px; */
+        /* width: 8rem; */
+    }
+
+    .backButton {
+        margin-left: -15rem;
+        /* margin-top: -10px; */
+    }
+
+    .submitButton {
+        margin-top: -5rem
+    }
+
+    .termp {
+        margin-top: -50%;
+        font-size: 10px;
+        background-color: #fff;
+    }
+
+    .termspan {
+        color: black;
+    }
+
+    .termsDiv {
+        font-size: larger;
+        margin-top: 52%;
+        margin-left: -20rem;
+    }
+
+    .submitButtonDiv {
+        margin-top: -5%;
+        background: white;
+    }
+
+    .inpButton {
+        margin-left: -15rem;
+    }
 }

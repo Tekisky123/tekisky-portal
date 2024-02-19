@@ -1,10 +1,11 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react';
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import style from '../assets/Styles/CreateStudent.module.css'
 
 function CreateStudent() {
     const navigate = useNavigate()
+    const { id } = useParams()
     const [formData, setFormData] = useState({
         courseName: '',
         sessionoryear: '',
@@ -75,10 +76,11 @@ function CreateStudent() {
         setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
     };
 
+    console.log("id", id)
+
+
 
     const handleSubmit = (event) => {
-
-
 
         if (formData.courseName.length <= 0) {
             errorMsgFun((prev) => {
@@ -247,28 +249,83 @@ function CreateStudent() {
             educationalDetails: educationalDetails,
         };
 
-        axios
-            .post('https://tekisky-portal.onrender.com/student/create', payload)
-            .then((response) => {
-                console.log("API Response:", response);
-                if (response.status === 200 || response.status === 201) {
-                    navigate('/terms');
-                } else {
-                    console.error("Unexpected Response:", response);
-                }
-            })
-
-
+        if (id) {
+            axios.put(`https://tekisky-portal-e544.onrender.com/student/${id}`, payload)
+                .then((response) => {
+                    console.log("update Response:", response);
+                })
+                .catch((error) => {
+                    console.error("Error updating student:", error);
+                })
+            return;
+        } else {
+            axios
+                .post('https://tekisky-portal-e544.onrender.com/student/create', payload)
+                .then((response) => {
+                    console.log("API Response:", response);
+                    if (response.status === 200 || response.status === 201) {
+                        navigate('/terms');
+                    } else {
+                        console.error("Unexpected Response:", response);
+                    }
+                })
+                .catch((error) => {
+                    console.error("Error creating student:", error);
+                })
+                .finally(() => {
+                    setLoading(false); // Set loading to false after the API call is complete
+                }); 
+        }
     };
 
+    useEffect(() => {
+        axios.get(`https://tekisky-portal-e544.onrender.com/student/getOneStudent/${id}`)
+            .then((response) => {
+                console.log("get single Response:", response);
+                const user = response.data.result;
+
+                setFormData({
+                    courseName: user.courseDetails.courseName,
+                    sessionoryear: user.courseDetails.sessionoryear,
+                    name: user.personalDetails.name,
+                    dateOfBirth: user.personalDetails.dateOfBirth,
+                    gender: user.personalDetails.gender,
+                    nationality: user.personalDetails.nationality,
+                    correspondenceAddress: user.contactDetails.correspondenceAddress,
+                    mobileNumber: user.contactDetails.mobileNumber,
+                    emailId: user.contactDetails.emailId,
+                    fatherName: user.contactDetails.fatherName,
+                    nameOfSchool10th: user.educationalDetails[0].tenth.nameOfSchool,
+                    board10th: user.educationalDetails[0].tenth.board,
+                    yearOfPassing10th: user.educationalDetails[0].tenth.yearOfPassing,
+                    subjects10th: user.educationalDetails[0].tenth.subjects[0],
+                    percentage10th: user.educationalDetails[0].tenth.percentage,
+                    nameOfCollage12th: user.educationalDetails[0].twelfth.nameOfCollege,
+                    board12th: user.educationalDetails[0].twelfth.board,
+                    yearOfPassing12th: user.educationalDetails[0].twelfth.yearOfPassing,
+                    subjects12th: user.educationalDetails[0].twelfth.subjects[0],
+                    percentage12th: user.educationalDetails[0].twelfth.percentage,
+                    nameOfCollagegrd: user.educationalDetails[0].graduation.nameOfCollege,
+                    boardgrd: user.educationalDetails[0].graduation.board,
+                    yearOfPassinggrd: user.educationalDetails[0].graduation.yearOfPassing,
+                    subjectsgrd: user.educationalDetails[0].graduation.subjects[0],
+                    percentagegrd: user.educationalDetails[0].graduation.percentage,
+                });
+            })
+            .catch((error) => {
+                console.error("Error single student:", error);
+            })
+    }, [])
+
+
     return (
-        <div>
+        <div className={style.cMainDiv}>
             <h1 style={{ textAlign: 'center' }}>Tekisky Pvt.Ltd.</h1>
             <h2 className={style.apph2}>Application for Admission</h2>
             <hr />
             <form onSubmit={handleSubmit} >
                 <div className={style.courceDetais}>
-                    <h3>Cource Detais:-</h3>
+                    <h3 className={style.courseH3}>Cource Detais:-</h3>
                     <label className={style.courceDetaisLabels} htmlFor="">Course Name :</label>
                     <input className={style.courceDetaisInputs} type="text" placeholder="Enter Course Name" onChange={handleChange} name="courseName" value={formData.courseName} />
                     <p className={style.validParaCource}>{errorMsg.courseName}</p>
@@ -316,7 +373,7 @@ function CreateStudent() {
                 </div>
                 <h3 className={style.courceDetaish2}>Educational Details:</h3>
                 <table className={style.stdTable}>
-                    <tr style={{textAlign: "center"}}>
+                    <tr style={{ textAlign: "center" }}>
                         <th>Exam <br /> Passed</th>
                         <th>Name of School</th>
                         <th>Board</th>
@@ -377,9 +434,15 @@ function CreateStudent() {
                     </tr>
                 </table>
                 <br />
-                <button className={style.nextButton} variant="primary" type="submit">
-                    Next
-                </button>
+                {id ? (
+                    <button className={style.nextButton} variant="primary" type="submit">
+                        Update
+                    </button>
+                ) : (
+                    <button className={style.nextButton} variant="primary" type="submit">
+                        Next
+                    </button>
+                )}
             </form>
         </div>
     )
